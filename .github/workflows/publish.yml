@@ -32,10 +32,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: '🔑 Checkout'
+      - name: 'Checkout'
         uses: actions/checkout@v4
 
-      - uses: oven-sh/setup-bun@main
+      - name: 'Setup Bun'
+        uses: oven-sh/setup-bun@main
         with:
           bun-version: latest
 
