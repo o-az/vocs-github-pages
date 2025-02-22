@@ -48,7 +48,6 @@ jobs:
         uses: actions/configure-pages@main
 
       - name: 'Upload Build Artifact'
-        id: deployment
         uses: actions/upload-pages-artifact@main
         with:
           path: ./docs/dist
