@@ -34,9 +34,10 @@ jobs:
         run: bun run build
 
       - name: 'Upload Build Artifact'
+        id: deployment
         uses: actions/upload-pages-artifact@main
         with:
-          name: dist
+          name: github-pages
           path: ./docs/dist
 
   deploy:
@@ -49,7 +50,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
