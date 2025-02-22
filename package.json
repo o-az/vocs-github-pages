@@ -1,0 +1,21 @@
+{
+  "name": "vocs-github-pages",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vocs dev",
+    "build": "vocs build",
+    "preview": "vocs preview",
+    "start": "bun x serve@latest ./docs/dist"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "vocs": "^1.0.0-alpha.62"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.7.3"
+  }
+}

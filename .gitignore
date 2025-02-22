@@ -1,0 +1,6 @@
+node_modules
+.env
+!.env.example
+.DS_Store
+dist
+vocs.config.ts*
