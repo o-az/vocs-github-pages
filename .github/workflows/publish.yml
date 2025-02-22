@@ -7,8 +7,8 @@ on:
 
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
-  contents: read
   pages: write
+  contents: read
   id-token: write
 
 # Allow one concurrent deployment
@@ -24,7 +24,8 @@ env:
   ACTIONS_RUNNER_DEBUG: true
 
 jobs:
-  build:
+  deploy:
+    name: 'Build & Publish to GitHub Pages'
     timeout-minutes: 3
     runs-on: ['ubuntu-latest']
     environment:
